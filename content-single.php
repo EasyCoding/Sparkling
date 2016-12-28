@@ -19,6 +19,11 @@
 			<div class="entry-meta">
 				<?php sparkling_posted_on(); ?>
 
+                <span class="comments-link">
+                    <i class="fa fa-comment-o"></i>
+                    <?php comments_popup_link( esc_html__( 'Leave a comment', 'sparkling' ), esc_html__( '1 Comment', 'sparkling' ), esc_html__( '% Comments', 'sparkling' ) ); ?>
+                </span>
+
 				<?php
 					/* translators: used between list items, there is a space after the comma */
 					$categories_list = get_the_category_list( esc_html__( ', ', 'sparkling' ) );

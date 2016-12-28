@@ -45,7 +45,7 @@ function sparkling_posted_on() {
 		esc_html( get_the_modified_date() )
 	);
 
-	printf( '<span class="posted-on"><i class="fa fa-calendar"></i> %1$s</span><span class="byline"> <i class="fa fa-user"></i> %2$s</span>',
+	printf( '<span class="posted-on"><i class="fa fa-clock-o"></i> %1$s</span>',
 		sprintf( '<a href="%1$s" rel="bookmark">%2$s</a>',
 			esc_url( get_permalink() ),
 			$time_string
