@@ -1564,3 +1564,10 @@ button[type=submit],
   border: 1px solid #dadada;
   padding: 45px 50px;
 }
+
+
+/* =EasyCoding Blog fixes
+------------------------------------------------- */
+.syntaxhighlighter .container:before {
+  display: block;
+}
