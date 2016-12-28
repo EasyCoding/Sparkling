@@ -384,6 +384,7 @@ hr.section-divider {
   background-color: #fff;
   border: 1px solid #dadada;
   border-top: none;
+  border-radius: 4px;
 }
 body.archive .post-inner-content,
 body.blog .post-inner-content,
@@ -755,6 +756,10 @@ button:hover, .button:hover {
 }
 /* =Custom Styles
 ----------------------------------------------- */
+#logo {
+  position: relative;
+}
+
 #logo .site-name {
   font-weight: bold;
   margin: 0;
@@ -767,9 +772,13 @@ button:hover, .button:hover {
   margin-bottom: 20px;
 }
 .site-description {
-  color: #777;
+  color: #DADADA;
   font-weight: 200;
-  font-size: 16px;
+  font-size: 13px;
+  position: absolute;
+  left: 0;
+  top: 35px;
+  white-space: nowrap;
 }
 .page-template-page-homepage-php .carousel {
   margin-top: -20px;
@@ -849,9 +858,8 @@ button:hover, .button:hover {
   font-size: 12px;
 }
 .navbar > .container .navbar-brand {
-  color: #DADADA;
+  color: #FFF;
   font-size: 20px;
-  margin: 13px 0;
   font-family: 'Roboto Slab', serif;
 }
 .navbar-default .navbar-nav > .open > a,
