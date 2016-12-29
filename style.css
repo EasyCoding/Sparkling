@@ -672,8 +672,8 @@ object {
 .woocommerce a.button, .woocommerce button.button, .woocommerce input.button,
 .woocommerce #respond input#submit.alt, .woocommerce a.button.alt,
 .woocommerce button.button.alt, .woocommerce input.button.alt {
-  background-color: #DA4453;
-  border-color: #DA4453;
+  background-color: #31708f;
+  border-color: #31708f;
   -webkit-transition: background-color 0.3s linear;
      -moz-transition: background-color 0.3s linear;
        -o-transition: background-color 0.3s linear;
@@ -1594,7 +1594,7 @@ button[type=submit],
 /* Social buttons */
 .omb_socialButtons a {
   color: #FFF !important;
-  opacity:1;
+  opacity:0.9;
 }
 .omb_socialButtons a:hover {
   color: white;
@@ -1603,3 +1603,16 @@ button[type=submit],
 .omb_socialButtons .omb_btn-rss {background: #f39c12;}
 .omb_socialButtons .omb_btn-twitter {background: #00aced;}
 .omb_socialButtons .omb_btn-telegram {background: #0088cc;}
+
+
+.entry-content h2, a, a:hover, .entry-title a:hover {
+    color: #31708f;
+}
+
+.entry-content a:hover {
+    text-decoration: underline;
+}
+
+.entry-content .btn:hover {
+    text-decoration: none;
+}
