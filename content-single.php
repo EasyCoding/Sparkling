@@ -26,7 +26,7 @@
 
 				<?php
 					/* translators: used between list items, there is a space after the comma */
-					$categories_list = get_the_category_list( esc_html__( ', ', 'sparkling' ) );
+					$categories_list = get_the_category_list( esc_html__( ',  ', 'sparkling' ) );
 					if ( $categories_list && sparkling_categorized_blog() ) :
 				?>
 				<span class="cat-links"><i class="fa fa-folder-open-o"></i>
