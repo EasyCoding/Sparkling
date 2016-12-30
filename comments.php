@@ -106,6 +106,9 @@ if ( post_password_required() ) {
         return $new_fields;
     }
 
+    //Проверим, вошел ли пользователь, что разрешить или запретить размещение ссылок
+    $pattern = !is_user_logged_in() ? 'data-pattern=\'([a-zA-Z0-9]+://)?([a-zA-Z0-9_]+:[a-zA-Z0-9_]+@)?([a-zA-Z0-9.-]+\\.[A-Za-z]{2,4})(:[0-9]+)?(/.*)?\'' : "";
+
     //Меняем содержимое формы
     $comment_args = array(
 
@@ -138,7 +141,7 @@ if ( post_password_required() ) {
 
             '<label for="comment">Внимание! Запрещено публиковать любые ссылки в тексте комментария, иначе он сразу же будет помечен как нежелательный и не будет опубликован на сайте.</label>' .
 
-            '<textarea id="comment" name="comment" class="form-control" rows="6" placeholder="Текст сообщения" aria-required="true" data-error="Введите ваше сообщение" required></textarea>' .
+            '<textarea id="comment" name="comment" class="form-control" rows="6" placeholder="Текст сообщения" aria-required="true" data-error="Введите ваше сообщение, ссылки указывать запрещено" ' . $pattern . ' required></textarea>' .
 
             '<div class="help-block with-errors"></div>'.
 
@@ -152,11 +155,20 @@ if ( post_password_required() ) {
     comment_form($comment_args);
 	?>
 
-<script type="text/javascript">
-    $(document).ready(function() {
-        $('#commentform').validator();
-    });
-</script>
+    <script type="text/javascript">
 
+        $('#commentform').validator({
+            custom: {
+                pattern: function ($el) {
+                    var pattern = $el.data('pattern');
+                    console.log(!$el.val() || new RegExp(pattern,"g").test($el.val()));
+                    return !$el.val() || new RegExp(pattern,"g").test($el.val());
+                }
+            },
+            errors: {
+                pattern: "Запрещено указывать ссылки в тексте сообщения!"
+            }
+        })
+    </script>
 
 </div><!-- #comments -->
