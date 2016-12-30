@@ -1666,3 +1666,7 @@ button[type=submit],
 .navbar-nav a:hover {
     color: #1ab4ef !important;
 }
+
+.comments-title {
+  color: #31708f;
+}
