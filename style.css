@@ -335,10 +335,10 @@ footer.entry-meta {
   margin-bottom: 0px;
 }
 .entry-title a {
-  color: #444;
+  color: #31708f;
 }
 .entry-title a:hover {
-  color: #DA4453;
+  color: #444 !important;
 }
 .btn.btn-default.read-more {
   float: left;
@@ -541,9 +541,11 @@ object {
   padding: 0;
 }
 #secondary .widget {
-  margin-bottom: 50px;
-  color: #C1C0C0;
-  overflow: hidden;
+    margin-bottom: 20px;
+    color: #333;
+    overflow: hidden;
+    border-bottom: 1px #dadada solid;
+    padding-bottom: 20px;
 }
 #secondary .widget:last-child {
   margin-bottom: 0px;
@@ -581,13 +583,20 @@ object {
   color: #636467;
 }
 #secondary .widget a {
-  color: #C1C0C0;
+    color: #31708f;
+}
+#secondary .widget a:hover {
+     text-decoration: underline;
 }
 .widget ul ul {
   padding: 10px;
 }
 .widget #social ul li {
     border-bottom: 0;
+}
+.widget .post-date {
+    display: block;
+    font-size: 12px;
 }
 .not-found-widget {
   margin-top: 30px;
@@ -638,10 +647,11 @@ object {
   display: block;
 }
 #secondary .widget .post-content a {
-  color: #DA4453;
+  color: #31708f;
+    text-decoration: none;
 }
 #secondary .widget .post-content a:hover {
-  color: #DADADA;
+  text-decoration: underline;
 }
 .widget .post-content span {
     font-size: 12px;
@@ -820,7 +830,7 @@ button:hover, .button:hover {
 .pagination .prev:hover
 .pagination .next:hover {
   color: #FFF;
-  background: #DA4453;
+  background: #31708f;
   text-decoration: none;
 }
 .pagination {
@@ -1019,6 +1029,10 @@ p.logged-in-as {
   margin-bottom: 40px !important;
   margin-left: 0px !important;
   padding-left: 0;
+outline: none;
+}
+.comment-list:focus {
+    outline: none;
 }
 .comment-list,
 .comment-list .children {
@@ -1325,7 +1339,7 @@ p.logged-in-as {
           transition: background-color 0.3s linear;
 }
 .scroll-to-top:hover {
-  background: #DA4453;
+  background: #31708f;
   opacity: .8;
 }
 
@@ -1615,4 +1629,40 @@ button[type=submit],
 
 .entry-content .btn:hover {
     text-decoration: none;
+}
+
+.search-query {
+    border-top-left-radius: 5px !important;
+    border-bottom-left-radius: 5px !important;
+}
+
+#wp-calendar caption {
+    text-transform: uppercase;
+    font-size: 14px;
+    color: #636467;
+    font-family: 'Roboto Slab', serif;
+    font-weight: 700;
+}
+
+.popular-posts-wrapper .post-content {
+    margin-left: 0px !important;
+}
+
+.widget_categories li, .widget_recent_entries li {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.widget_recent_entries li:before {
+    font-family: fontawesome;
+    content: '\f0f6';
+    margin-right: 10px;
+}
+
+.widget_recent_entries .post-date {
+    margin-left: 25px;
+}
+
+.navbar-nav a:hover {
+    color: #1ab4ef !important;
 }
