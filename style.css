@@ -1688,3 +1688,8 @@ button[type=submit],
     float: right;
     margin: 15px 15px -15px;
 }
+
+.btn-default.disabled.focus, .btn-default.disabled:focus, .btn-default.disabled:hover, .btn-default[disabled].focus, .btn-default[disabled]:focus, .btn-default[disabled]:hover, fieldset[disabled] .btn-default.focus, fieldset[disabled] .btn-default:focus, fieldset[disabled] .btn-default:hover {
+    background-color: #31708f;
+    border-color: #31708f;
+}

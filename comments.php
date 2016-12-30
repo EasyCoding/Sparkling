@@ -114,31 +114,35 @@ if ( post_password_required() ) {
             'author' => '<div class="comment-inputs">
                             <div class="col-lg-6 col-xs-12" style="padding-left:0px">
                                 <div class="form-group">
-                                    <label for="inputName" class="control-label">Имя (обязательно)</label>
+                                    <label for="inputName" class="control-label">Имя</label>
                                     <div class="input-group">
                                         <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-                                        <input id="author" name="author" type="text" class="form-control" placeholder="Ваше имя" value="' . esc_attr( $commenter['comment_author'] ) . '" ' . $aria_req . ' />
+                                        <input id="author" name="author" type="text" class="form-control" placeholder="Ваше имя" value="' . esc_attr( $commenter['comment_author'] ) . '" ' . $aria_req . ' data-error="Необходимо указать имя" required/>
                                     </div>
+                                    <div class="help-block with-errors"></div>
                                 </div>
                             </div>',
 
             'email'  => '<div class="col-lg-6 col-xs-12"  style="padding-right:0px">
                             <div class="form-group">
-                                <label for="inputName" class="control-label">E-mail (не публикуется) (обязательно)</label>
+                                <label for="inputName" class="control-label">E-mail (не публикуется)</label>
                                 <div class="input-group">
                                     <span class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></span>
-                                    <input id="email" name="email" type="text" class="form-control" placeholder="Email" value="' . esc_attr(  $commenter['comment_author_email'] ) . '" ' . $aria_req . ' />
+                                    <input id="email" name="email" type="email" class="form-control" placeholder="Email" value="' . esc_attr(  $commenter['comment_author_email'] ) . '" ' . $aria_req . ' data-error="Неверный формат почтового ящика" required/>
                                 </div>
+                                <div class="help-block with-errors"></div>
                             </div>
                         </div></div> ' ) ),
 
-        'comment_field' => '<p>' .
+        'comment_field' => '<div class="form-group">' .
 
             '<label for="comment">Внимание! Запрещено публиковать любые ссылки в тексте комментария, иначе он сразу же будет помечен как нежелательный и не будет опубликован на сайте.</label>' .
 
-            '<textarea id="comment" name="comment" class="form-control" rows="6" placeholder="Текст сообщения" aria-required="true"></textarea>' .
+            '<textarea id="comment" name="comment" class="form-control" rows="6" placeholder="Текст сообщения" aria-required="true" data-error="Введите ваше сообщение" required></textarea>' .
 
-            '</p>',
+            '<div class="help-block with-errors"></div>'.
+
+            '</div>',
 
         'comment_notes_after' => '',
         'class_submit'         => 'submit button_submit_comments btn-lg',
@@ -148,7 +152,11 @@ if ( post_password_required() ) {
     comment_form($comment_args);
 	?>
 
-
+<script type="text/javascript">
+    $(document).ready(function() {
+        $('#commentform').validator();
+    });
+</script>
 
 
 </div><!-- #comments -->
