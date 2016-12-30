@@ -1013,11 +1013,6 @@ button:hover, .button:hover {
 }
 .bypostauthor {
 }
-#respond {
-  background-color: transparent !important;
-  box-shadow: none !important;
-  padding: 0px !important;
-}
 #respond > p, #respond p.comment-notes, p.logged-in-as {
   margin-bottom: 10px;
 }
@@ -1103,7 +1098,8 @@ outline: none;
   margin-top: 30px;
 }
 .comment-reply-title {
-  font-size: 14px;
+  font-size: 18px;
+  color: #31708f;
 }
 .comment-reply-link {
   background: #C1C0C0;
@@ -1669,4 +1665,26 @@ button[type=submit],
 
 .comments-title {
   color: #31708f;
+}
+
+#respond {
+    padding: 10px 20px 25px 30px;
+    margin-top: 30px;
+    background-color: #fff;
+    border: 1px solid #dadada;
+    border-radius: 4px;
+    box-shadow: 0 0.005em 0.01em 0 rgba(0,0,0,.12),0 2px 10px 0 rgba(0,0,0,.12) !important;
+}
+
+.comment-notes {
+    display: none;
+}
+
+.comment-inputs .input-group-addon {
+    border-right: 1px solid #ccc;
+}
+
+.button_submit_comments {
+    float: right;
+    margin: 15px 15px -15px;
 }
