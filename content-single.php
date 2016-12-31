@@ -29,7 +29,7 @@
 					$categories_list = get_the_category_list( esc_html__( ',  ', 'sparkling' ) );
 					if ( $categories_list && sparkling_categorized_blog() ) :
 				?>
-				<span class="cat-links"><i class="fa fa-folder-open-o"></i>
+				<span class="cat-links"><i class="fa fa-folder-o"></i>
 					<?php printf( esc_html__( ' %1$s', 'sparkling' ), $categories_list ); ?>
 				</span>
 				<?php endif; // End if categories ?>
