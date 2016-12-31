@@ -670,14 +670,14 @@ object {
   line-height: 100%;
   display: inline-block;
   color: #FFF !important;
-  background-color: #DADADA;
+  background-color: #C1C0C0;
   border-radius: 3px;
   -webkit-border-radius: 3px;
   font-size: 12px !important;
 }
 .tagcloud a:hover {
-  background-color: #DA4453;
-  border-color: #DA4453;
+  background-color: #31708f;
+  border-color: #31708f;
 }
 
 /* =Buttons
@@ -703,8 +703,8 @@ object {
 #image-navigation .nav-next a:hover, .woocommerce #respond input#submit:hover,
 .woocommerce #respond input#submit.alt:hover, .woocommerce a.button:hover, .woocommerce button.button:hover, .woocommerce input.button:hover,
 .woocommerce a.button.alt:hover, .woocommerce button.button.alt:hover, .woocommerce input.button.alt:hover{
-  background-color: #363636;
-  border-color: #363636;
+  background-color: #31708f;
+  border-color: #31708f;
   color: #FFF;
 }
 .btn.btn-default, .woocommerce #respond input#submit, .woocommerce a.button,
@@ -1748,4 +1748,23 @@ button[type=submit],
 .page-title {
     color: #31708f;
     margin-top: -20px;
+}
+
+.comment-body a:hover {
+    text-decoration: underline;
+}
+
+.comment-body .comment-reply-link:hover {
+    text-decoration: none;
+}
+
+.read-more:hover {
+    background-color: #363636 !important;
+    border-color: #363636 !important;
+}
+
+.error-404 .page-content {
+    box-shadow: none !important;
+    border: none !important;
+    padding: 0px;
 }
