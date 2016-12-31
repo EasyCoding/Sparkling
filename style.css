@@ -769,6 +769,7 @@ button:hover, .button:hover {
 #logo {
   position: relative;
   margin-top: 10px;
+  width: 80%;
 }
 
 #logo .site-name {
@@ -1692,4 +1693,33 @@ button[type=submit],
 .btn-default.disabled.focus, .btn-default.disabled:focus, .btn-default.disabled:hover, .btn-default[disabled].focus, .btn-default[disabled]:focus, .btn-default[disabled]:hover, fieldset[disabled] .btn-default.focus, fieldset[disabled] .btn-default:focus, fieldset[disabled] .btn-default:hover {
     background-color: #31708f;
     border-color: #31708f;
+}
+
+.blog-description {
+    color: #C0C0C0;
+    white-space: nowrap;
+}
+
+@media (max-width: 767px) {
+    .navbar-brand {
+        font-size: 16px !important;
+        padding: 0px;
+        white-space: nowrap;
+    }
+
+    #logo {
+        margin-top: 6px;
+    }
+
+    .main-content-area {
+        margin-top: 20px;
+    }
+
+    .single-view, .blog-item-wrap {
+        margin-bottom: 25px;
+    }
+}
+
+.navbar-toggle {
+    margin-right: -10px;
 }

@@ -56,7 +56,7 @@ if (isset($_SERVER['HTTP_USER_AGENT']) && (strpos($_SERVER['HTTP_USER_AGENT'], '
                                 <h1 class="site-name">
                                     <a class="navbar-brand" href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a>
                                 </h1>
-                                <p style="color: #C0C0C0"><?php bloginfo( 'description' ); ?></p>
+                                <p class="blog-description hidden-xs"><?php bloginfo( 'description' ); ?></p>
                             </div>
 						</div>
 						<?php sparkling_header_menu(); // main navigation ?>
