@@ -1718,6 +1718,23 @@ button[type=submit],
     .single-view, .blog-item-wrap {
         margin-bottom: 25px;
     }
+
+    .cat-links {
+        float: left;
+    }
+
+    .entry-content {
+        margin-top: 40px;
+    }
+
+    .omb_socialButtons .col-sm-4 {
+        width: 33.33333333%;
+        float: left;
+    }
+
+    .email-field {
+        padding-left: 0px;
+    }
 }
 
 .navbar-toggle {

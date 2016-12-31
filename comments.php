@@ -126,7 +126,7 @@ if ( post_password_required() ) {
                                 </div>
                             </div>',
 
-            'email'  => '<div class="col-lg-6 col-xs-12"  style="padding-right:0px">
+            'email'  => '<div class="col-lg-6 col-xs-12 email-field"  style="padding-right:0px">
                             <div class="form-group">
                                 <label for="inputName" class="control-label">E-mail (не публикуется)</label>
                                 <div class="input-group">
