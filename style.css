@@ -833,7 +833,8 @@ button:hover, .button:hover {
 }
 .post-navigation a:hover,
 .pagination .prev:hover
-.pagination .next:hover {
+.pagination .next:hover,
+.pagination .nav-links a:hover {
   color: #FFF;
   background: #31708f;
   text-decoration: none;
