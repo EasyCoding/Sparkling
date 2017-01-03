@@ -26,10 +26,10 @@ if ( post_password_required() ) {
 
         if($commentsCount != 0)
         {
-            printf(sprintf(esc_html_e( '%d %s to post', 'sparkling' ), $commentsCount, getNumEnding($commentsCount, array(esc_html_e( 'comment', 'sparkling' ), esc_html_e( 'commentary', 'sparkling' ), esc_html_e( 'commentaries', 'sparkling' ))))) ;
+            printf(sprintf(esc_html__( '%d %s to post', 'sparkling' ), $commentsCount, getNumEnding($commentsCount, array(esc_html__( 'comment', 'sparkling' ), esc_html__( 'commentary', 'sparkling' ), esc_html__( 'commentaries', 'sparkling' ))))) ;
         }
         else {
-            printf(esc_html_e( 'No commentaries yet.', 'sparkling' ));
+            printf(esc_html__( 'No commentaries yet.', 'sparkling' ));
         }
 
         ?>
@@ -116,10 +116,10 @@ if ( post_password_required() ) {
             'author' => '<div class="comment-inputs">
                             <div class="col-lg-6 col-xs-12" style="padding-left:0px">
                                 <div class="form-group">
-                                    <label for="inputName" class="control-label">' . esc_html_e( 'Name', 'sparkling' ) . '</label>
+                                    <label for="inputName" class="control-label">' . esc_html__( 'Name', 'sparkling' ) . '</label>
                                     <div class="input-group">
                                         <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-                                        <input id="author" name="author" type="text" class="form-control" placeholder="' . esc_html_e( 'Your name', 'sparkling' ).'" value="' . esc_attr( $commenter['comment_author'] ) . '" ' . $aria_req . ' data-error="' . esc_html_e( 'You must enter your name!', 'sparkling' ) . '" required/>
+                                        <input id="author" name="author" type="text" class="form-control" placeholder="' . esc_html__( 'Your name', 'sparkling' ).'" value="' . esc_attr( $commenter['comment_author'] ) . '" ' . $aria_req . ' data-error="' . esc_html__( 'You must enter your name!', 'sparkling' ) . '" required/>
                                     </div>
                                     <div class="help-block with-errors"></div>
                                 </div>
@@ -127,10 +127,10 @@ if ( post_password_required() ) {
 
             'email'  => '<div class="col-lg-6 col-xs-12 email-field"  style="padding-right:0px">
                             <div class="form-group">
-                                <label for="inputName" class="control-label">' . esc_html_e( 'Email (hidden)', 'sparkling' ) . '</label>
+                                <label for="inputName" class="control-label">' . esc_html__( 'Email (hidden)', 'sparkling' ) . '</label>
                                 <div class="input-group">
                                     <span class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></span>
-                                    <input id="email" name="email" type="email" class="form-control" placeholder="Email" value="' . esc_attr(  $commenter['comment_author_email'] ) . '" ' . $aria_req . ' data-error="' . esc_html_e( 'Incorrect Email address entered.', 'sparkling' ) .'" required/>
+                                    <input id="email" name="email" type="email" class="form-control" placeholder="Email" value="' . esc_attr(  $commenter['comment_author_email'] ) . '" ' . $aria_req . ' data-error="' . esc_html__( 'Incorrect Email address entered.', 'sparkling' ) .'" required/>
                                 </div>
                                 <div class="help-block with-errors"></div>
                             </div>
@@ -138,9 +138,9 @@ if ( post_password_required() ) {
 
         'comment_field' => '<div class="form-group">' .
 
-            '<label for="comment">' . esc_html_e( 'Do not post any hyperlinks, or your comment will be removed as spam.', 'sparkling' ) . '</label>' .
+            '<label for="comment">' . esc_html__( 'Do not post any hyperlinks, or your comment will be removed as spam.', 'sparkling' ) . '</label>' .
 
-            '<textarea id="comment" name="comment" class="form-control" rows="6" placeholder="' . esc_html_e( 'Enter your comment', 'sparkling' ) . '" aria-required="true" data-error="'.esc_html_e( 'Enter your comment without any hyperlinks.', 'sparkling' ).'" ' . $pattern . ' required></textarea>' .
+            '<textarea id="comment" name="comment" class="form-control" rows="6" placeholder="' . esc_html__( 'Enter your comment', 'sparkling' ) . '" aria-required="true" data-error="'.esc_html__( 'Enter your comment without any hyperlinks.', 'sparkling' ).'" ' . $pattern . ' required></textarea>' .
 
             '<div class="help-block with-errors"></div>'.
 
