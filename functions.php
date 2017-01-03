@@ -482,3 +482,11 @@ function getNumEnding($number, $endingArray)
     }
     return $ending;
 }
+
+function remove_version()
+{
+  return '';
+}
+
+// Replace version info by custom text...
+add_filter('the_generator', 'remove_version');
