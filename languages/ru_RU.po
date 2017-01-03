@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Sparkling Theme\n"
 "POT-Creation-Date: 2017-01-03 19:20+0500\n"
-"PO-Revision-Date: 2017-01-03 19:20+0500\n"
+"PO-Revision-Date: 2017-01-03 19:26+0500\n"
 "Last-Translator: V1TSK <vitaly@easycoding.org>\n"
 "Language-Team: colorlib <info@colorlib.com>\n"
 "Language: ru\n"
@@ -30,51 +30,43 @@ msgstr ""
 "поиском?"
 
 #: ../archive.php:39 ../inc/extras.php:434 ../index.php:43 ../search.php:34
-#, fuzzy
 msgid "Newer posts"
-msgstr "Навигация по записям"
+msgstr "Новые записи"
 
 #: ../archive.php:40 ../inc/extras.php:435 ../index.php:44 ../search.php:35
-#, fuzzy
 msgid "Older posts"
-msgstr "Опции слайдера"
+msgstr "Старые записи"
 
 #: ../comments.php:29
-#, fuzzy, php-format
+#, php-format
 msgid "%d %s to post"
 msgstr "%d %s к записи"
 
 #: ../comments.php:29
-#, fuzzy
 msgid "comment"
-msgstr "1 комментарий"
+msgstr "комментарий"
 
 #: ../comments.php:29
-#, fuzzy
 msgid "commentary"
-msgstr "1 комментарий"
+msgstr "комментария"
 
 #: ../comments.php:29
-#, fuzzy
 msgid "commentaries"
-msgstr "% комментарии"
+msgstr "комментариев"
 
 #: ../comments.php:32
-#, fuzzy
 msgid "No commentaries yet."
-msgstr "Комментарии закрыты"
+msgstr "Пока нет комментариев."
 
 #: ../comments.php:44 ../comments.php:66
 msgid "Comment navigation"
 msgstr "Навигация по комментариям"
 
 #: ../comments.php:47 ../comments.php:69
-#, fuzzy
 msgid "Older Comments"
-msgstr "&larr; Предыдущие комментарии"
+msgstr "&larr; Старые комментарии"
 
 #: ../comments.php:48 ../comments.php:70
-#, fuzzy
 msgid "Newer Comments"
 msgstr "Новые комментарии &rarr;"
 
@@ -84,40 +76,41 @@ msgstr "Комментарии закрыты"
 
 #: ../comments.php:119
 msgid "Name"
-msgstr ""
+msgstr "Имя"
 
 #: ../comments.php:122
 msgid "Your name"
-msgstr ""
+msgstr "Ваше имя"
 
 #: ../comments.php:122
 msgid "You must enter your name!"
-msgstr ""
+msgstr "Необходимо указать имя"
 
 #: ../comments.php:130
 msgid "Email (hidden)"
-msgstr ""
+msgstr "E-mail (не публикуется)"
 
 #: ../comments.php:133
 msgid "Incorrect Email address entered."
-msgstr ""
+msgstr "Неверный формат почтового ящика"
 
 #: ../comments.php:141
 msgid "Do not post any hyperlinks, or your comment will be removed as spam."
 msgstr ""
+"Внимание! Запрещено публиковать любые ссылки в тексте комментария, иначе он "
+"сразу же будет помечен как нежелательный и не будет опубликован на сайте."
 
 #: ../comments.php:143
-#, fuzzy
 msgid "Enter your comment"
-msgstr "Оставить комментарий"
+msgstr "Написать комментарий"
 
 #: ../comments.php:143
 msgid "Enter your comment without any hyperlinks."
-msgstr ""
+msgstr "Введите ваше сообщение. Ссылки указывать запрещено!"
 
 #: ../comments.php:168
 msgid "Do not post any hyperlinks!"
-msgstr ""
+msgstr "Запрещено указывать ссылки в тексте сообщения!"
 
 #: ../content-none.php:13
 msgid "Nothing Found"
@@ -151,9 +144,9 @@ msgid "Pages:"
 msgstr "Страницы:"
 
 #: ../content-page.php:45 ../content-single.php:41 ../content.php:46
-#, fuzzy, php-format
+#, php-format
 msgid "Edit %s"
-msgstr "Правка"
+msgstr "Редактировать %s"
 
 #: ../content-single.php:24 ../content.php:28
 msgid "Leave a comment"
@@ -234,13 +227,12 @@ msgid "Left Sidebar"
 msgstr "Слева"
 
 #: ../functions.php:316
-#, fuzzy
 msgid "No Sidebar"
-msgstr "Боковая панель"
+msgstr "Без боковой панели"
 
 #: ../functions.php:316
 msgid "Full Width"
-msgstr ""
+msgstr "В полную ширину"
 
 #: ../image.php:22
 msgid "<i class=\"fa fa-chevron-left\"></i> Previous"
