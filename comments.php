@@ -26,10 +26,10 @@ if ( post_password_required() ) {
 
         if($commentsCount != 0)
         {
-            printf( sprintf("%d %s к записи", $commentsCount, getNumEnding($commentsCount, array("комментарий", "комментария", "комментариев")))) ;
+            printf(sprintf(esc_html_e( '%d %s to post', 'sparkling' ), $commentsCount, getNumEnding($commentsCount, array(esc_html_e( 'commentary', 'sparkling' ), esc_html_e( 'commentary', 'sparkling' ), esc_html_e( 'commentaries', 'sparkling' ))))) ;
         }
         else {
-            printf("Комментариев пока нет");
+            printf(esc_html_e( 'No commentaries yet.', 'sparkling' ));
         }
 
         ?>
@@ -87,7 +87,6 @@ if ( post_password_required() ) {
 	//Меняем поля местами
     add_filter('comment_form_fields', 'kama_reorder_comment_fields' );
     function kama_reorder_comment_fields( $fields ){
-        // die(print_r( $fields )); // посмотрим какие поля есть
 
         $new_fields = array(); // сюда соберем поля в новом порядке
 
@@ -117,10 +116,10 @@ if ( post_password_required() ) {
             'author' => '<div class="comment-inputs">
                             <div class="col-lg-6 col-xs-12" style="padding-left:0px">
                                 <div class="form-group">
-                                    <label for="inputName" class="control-label">Имя</label>
+                                    <label for="inputName" class="control-label">' . esc_html_e( 'Name', 'sparkling' ) . '</label>
                                     <div class="input-group">
                                         <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-                                        <input id="author" name="author" type="text" class="form-control" placeholder="Ваше имя" value="' . esc_attr( $commenter['comment_author'] ) . '" ' . $aria_req . ' data-error="Необходимо указать имя" required/>
+                                        <input id="author" name="author" type="text" class="form-control" placeholder="' . esc_html_e( 'Your name', 'sparkling' ).'" value="' . esc_attr( $commenter['comment_author'] ) . '" ' . $aria_req . ' data-error="' . esc_html_e( 'You must enter your name!', 'sparkling' ) . '" required/>
                                     </div>
                                     <div class="help-block with-errors"></div>
                                 </div>
@@ -128,10 +127,10 @@ if ( post_password_required() ) {
 
             'email'  => '<div class="col-lg-6 col-xs-12 email-field"  style="padding-right:0px">
                             <div class="form-group">
-                                <label for="inputName" class="control-label">E-mail (не публикуется)</label>
+                                <label for="inputName" class="control-label">' . esc_html_e( 'Email (hidden)', 'sparkling' ) . '</label>
                                 <div class="input-group">
                                     <span class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></span>
-                                    <input id="email" name="email" type="email" class="form-control" placeholder="Email" value="' . esc_attr(  $commenter['comment_author_email'] ) . '" ' . $aria_req . ' data-error="Неверный формат почтового ящика" required/>
+                                    <input id="email" name="email" type="email" class="form-control" placeholder="Email" value="' . esc_attr(  $commenter['comment_author_email'] ) . '" ' . $aria_req . ' data-error="' . esc_html_e( 'Incorrect Email address entered.', 'sparkling' ) .'" required/>
                                 </div>
                                 <div class="help-block with-errors"></div>
                             </div>
@@ -139,9 +138,9 @@ if ( post_password_required() ) {
 
         'comment_field' => '<div class="form-group">' .
 
-            '<label for="comment">Внимание! Запрещено публиковать любые ссылки в тексте комментария, иначе он сразу же будет помечен как нежелательный и не будет опубликован на сайте.</label>' .
+            '<label for="comment">' . esc_html_e( 'Do not post any hyperlinks, or your comment will be removed as spam.', 'sparkling' ) . '</label>' .
 
-            '<textarea id="comment" name="comment" class="form-control" rows="6" placeholder="Текст сообщения" aria-required="true" data-error="Введите ваше сообщение, ссылки указывать запрещено" ' . $pattern . ' required></textarea>' .
+            '<textarea id="comment" name="comment" class="form-control" rows="6" placeholder="' . esc_html_e( 'Enter your comment', 'sparkling' ) . '" aria-required="true" data-error="'.esc_html_e( 'Enter your comment without any hyperlinks.', 'sparkling' ).'" ' . $pattern . ' required></textarea>' .
 
             '<div class="help-block with-errors"></div>'.
 
@@ -166,7 +165,7 @@ if ( post_password_required() ) {
                 }
             },
             errors: {
-                pattern: "Запрещено указывать ссылки в тексте сообщения!"
+                pattern: "<?php esc_html_e( 'Do not post any hyperlinks!', 'sparkling' ); ?>"
             }
         })
     </script>
