@@ -2,7 +2,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Sparkling Theme\n"
-"POT-Creation-Date: 2017-01-03 19:20+0500\n"
+"POT-Creation-Date: 2017-01-03 19:50+0500\n"
 "PO-Revision-Date: 2015-04-04 15:03+0200\n"
 "Last-Translator: Aigars Silkalns <a.silkalns@gmail.com>\n"
 "Language-Team: colorlib <info@colorlib.com>\n"
@@ -961,6 +961,10 @@ msgstr ""
 
 #: ../searchform.php:11
 msgid "Search for:"
+msgstr ""
+
+#: ../searchform.php:12
+msgid "Enter keywords for search!"
 msgstr ""
 
 #: ../searchform.php:12

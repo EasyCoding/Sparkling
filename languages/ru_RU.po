@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Sparkling Theme\n"
-"POT-Creation-Date: 2017-01-03 19:20+0500\n"
-"PO-Revision-Date: 2017-01-03 19:26+0500\n"
+"POT-Creation-Date: 2017-01-03 19:50+0500\n"
+"PO-Revision-Date: 2017-01-03 19:53+0500\n"
 "Last-Translator: V1TSK <vitaly@easycoding.org>\n"
 "Language-Team: colorlib <info@colorlib.com>\n"
 "Language: ru\n"
@@ -1027,21 +1027,22 @@ msgid "Search Results for: %s"
 msgstr "Результаты поиска по: %s"
 
 #: ../searchform.php:11
-#, fuzzy
 msgid "Search for:"
-msgstr "Результаты поиска по: %s"
+msgstr "Поиск по:"
 
 #: ../searchform.php:12
-#, fuzzy
+msgid "Enter keywords for search!"
+msgstr "Введите текст для поиска..."
+
+#: ../searchform.php:12
 msgctxt "label"
 msgid "Search for:"
-msgstr "Результаты поиска по: %s"
+msgstr "Поиск по: [ тегу ]"
 
 #: ../searchform.php:14
-#, fuzzy
 msgctxt "submit button"
 msgid "Search"
-msgstr "Поиск"
+msgstr "Искать!"
 
 #: ../sidebar.php:19
 msgid "Archives"
