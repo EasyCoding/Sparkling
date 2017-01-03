@@ -2,7 +2,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Sparkling Theme\n"
-"POT-Creation-Date: 2017-01-03 19:16+0500\n"
+"POT-Creation-Date: 2017-01-03 19:20+0500\n"
 "PO-Revision-Date: 2015-04-04 15:03+0200\n"
 "Last-Translator: Aigars Silkalns <a.silkalns@gmail.com>\n"
 "Language-Team: colorlib <info@colorlib.com>\n"
@@ -36,6 +36,10 @@ msgstr ""
 #: ../comments.php:29
 #, php-format
 msgid "%d %s to post"
+msgstr ""
+
+#: ../comments.php:29
+msgid "comment"
 msgstr ""
 
 #: ../comments.php:29
