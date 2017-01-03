@@ -26,7 +26,7 @@ if ( post_password_required() ) {
 
         if($commentsCount != 0)
         {
-            printf(sprintf(esc_html_e( '%d %s to post', 'sparkling' ), $commentsCount, getNumEnding($commentsCount, array(esc_html_e( 'commentary', 'sparkling' ), esc_html_e( 'commentary', 'sparkling' ), esc_html_e( 'commentaries', 'sparkling' ))))) ;
+            printf(sprintf(esc_html_e( '%d %s to post', 'sparkling' ), $commentsCount, getNumEnding($commentsCount, array(esc_html_e( 'comment', 'sparkling' ), esc_html_e( 'commentary', 'sparkling' ), esc_html_e( 'commentaries', 'sparkling' ))))) ;
         }
         else {
             printf(esc_html_e( 'No commentaries yet.', 'sparkling' ));
