@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Sparkling Theme\n"
-"POT-Creation-Date: 2017-01-03 19:17+0500\n"
-"PO-Revision-Date: 2017-01-03 19:17+0500\n"
+"POT-Creation-Date: 2017-01-03 19:20+0500\n"
+"PO-Revision-Date: 2017-01-03 19:20+0500\n"
 "Last-Translator: V1TSK <vitaly@easycoding.org>\n"
 "Language-Team: colorlib <info@colorlib.com>\n"
 "Language: ru\n"
@@ -40,9 +40,14 @@ msgid "Older posts"
 msgstr "Опции слайдера"
 
 #: ../comments.php:29
-#, php-format
+#, fuzzy, php-format
 msgid "%d %s to post"
-msgstr ""
+msgstr "%d %s к записи"
+
+#: ../comments.php:29
+#, fuzzy
+msgid "comment"
+msgstr "1 комментарий"
 
 #: ../comments.php:29
 #, fuzzy
@@ -231,7 +236,7 @@ msgstr "Слева"
 #: ../functions.php:316
 #, fuzzy
 msgid "No Sidebar"
-msgstr "Без сайдбара"
+msgstr "Боковая панель"
 
 #: ../functions.php:316
 msgid "Full Width"
@@ -300,7 +305,7 @@ msgstr "Введите количество слайдов"
 #: ../inc/customizer.php:122
 #, fuzzy
 msgid "Layout options"
-msgstr "Опции разметки"
+msgstr "Варианты разметки сайта"
 
 #: ../inc/customizer.php:134
 msgid "Website Layout Options"
