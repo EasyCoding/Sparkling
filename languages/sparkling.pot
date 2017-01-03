@@ -2,14 +2,14 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Sparkling Theme\n"
-"POT-Creation-Date: 2016-10-11 20:54+0300\n"
+"POT-Creation-Date: 2017-01-03 19:16+0500\n"
 "PO-Revision-Date: 2015-04-04 15:03+0200\n"
 "Last-Translator: Aigars Silkalns <a.silkalns@gmail.com>\n"
 "Language-Team: colorlib <info@colorlib.com>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 1.8.9\n"
+"X-Generator: Poedit 1.8.11\n"
 "X-Poedit-Basepath: .\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Poedit-KeywordsList: _e;__;esc_attr__;esc_html__;esc_html_e;esc_attr_x:1,2c;_nx:4c,1,2;_n:1,2\n"
@@ -25,57 +25,81 @@ msgstr ""
 msgid "It looks like nothing was found at this location. Maybe try one of the links below or a search?"
 msgstr ""
 
-#: ../404.php:25
-msgid "Recent Posts"
-msgstr ""
-
-#: ../404.php:31
-msgid "Most Used Categories"
-msgstr ""
-
-#: ../404.php:52
-#, php-format
-msgid "Try looking in the monthly archives. %1$s"
-msgstr ""
-
-#: ../404.php:53 ../sidebar.php:19
-msgid "Archives"
-msgstr ""
-
-#: ../404.php:58
-msgid "Tags"
-msgstr ""
-
-#: ../archive.php:39 ../inc/extras.php:430 ../index.php:40 ../search.php:34
+#: ../archive.php:39 ../inc/extras.php:434 ../index.php:43 ../search.php:34
 msgid "Newer posts"
 msgstr ""
 
-#: ../archive.php:40 ../inc/extras.php:431 ../index.php:41 ../search.php:35
+#: ../archive.php:40 ../inc/extras.php:435 ../index.php:44 ../search.php:35
 msgid "Older posts"
 msgstr ""
 
 #: ../comments.php:29
 #, php-format
-msgctxt "comments title"
-msgid "One thought on &ldquo;%2$s&rdquo;"
-msgid_plural "%1$s thoughts on &ldquo;%2$s&rdquo;"
-msgstr[0] ""
-msgstr[1] ""
+msgid "%d %s to post"
+msgstr ""
 
-#: ../comments.php:38 ../comments.php:60
+#: ../comments.php:29
+msgid "commentary"
+msgstr ""
+
+#: ../comments.php:29
+msgid "commentaries"
+msgstr ""
+
+#: ../comments.php:32
+msgid "No commentaries yet."
+msgstr ""
+
+#: ../comments.php:44 ../comments.php:66
 msgid "Comment navigation"
 msgstr ""
 
-#: ../comments.php:41 ../comments.php:63
+#: ../comments.php:47 ../comments.php:69
 msgid "Older Comments"
 msgstr ""
 
-#: ../comments.php:42 ../comments.php:64
+#: ../comments.php:48 ../comments.php:70
 msgid "Newer Comments"
 msgstr ""
 
-#: ../comments.php:77
+#: ../comments.php:83
 msgid "Comments are closed."
+msgstr ""
+
+#: ../comments.php:119
+msgid "Name"
+msgstr ""
+
+#: ../comments.php:122
+msgid "Your name"
+msgstr ""
+
+#: ../comments.php:122
+msgid "You must enter your name!"
+msgstr ""
+
+#: ../comments.php:130
+msgid "Email (hidden)"
+msgstr ""
+
+#: ../comments.php:133
+msgid "Incorrect Email address entered."
+msgstr ""
+
+#: ../comments.php:141
+msgid "Do not post any hyperlinks, or your comment will be removed as spam."
+msgstr ""
+
+#: ../comments.php:143
+msgid "Enter your comment"
+msgstr ""
+
+#: ../comments.php:143
+msgid "Enter your comment without any hyperlinks."
+msgstr ""
+
+#: ../comments.php:168
+msgid "Do not post any hyperlinks!"
 msgstr ""
 
 #: ../content-none.php:13
@@ -95,98 +119,98 @@ msgstr ""
 msgid "It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps searching can help."
 msgstr ""
 
-#: ../content-page.php:21 ../content-single.php:47 ../content.php:60
+#: ../content-page.php:26 ../content-single.php:57 ../content.php:78
 #: ../image.php:79
 msgid "Pages:"
 msgstr ""
 
-#: ../content-page.php:40 ../content-single.php:31 ../content.php:28
+#: ../content-page.php:45 ../content-single.php:41 ../content.php:46
 #, php-format
 msgid "Edit %s"
 msgstr ""
 
-#: ../content-single.php:19
-msgid ", "
+#: ../content-single.php:24 ../content.php:28
+msgid "Leave a comment"
 msgstr ""
 
-#: ../content-single.php:23
+#: ../content-single.php:24 ../content.php:28
+msgid "1 Comment"
+msgstr ""
+
+#: ../content-single.php:24 ../content.php:28
+msgid "% Comments"
+msgstr ""
+
+#: ../content-single.php:29 ../content.php:32
+msgid ",  "
+msgstr ""
+
+#: ../content-single.php:33 ../content.php:36
 #, php-format
 msgid " %1$s"
 msgstr ""
 
-#: ../content.php:20
-msgid "Leave a comment"
-msgstr ""
-
-#: ../content.php:20
-msgid "1 Comment"
-msgstr ""
-
-#: ../content.php:20
-msgid "% Comments"
-msgstr ""
-
-#: ../content.php:44 ../content.php:52
+#: ../content.php:62 ../content.php:70
 msgid "Read More"
 msgstr ""
 
-#: ../functions.php:69
+#: ../functions.php:70
 msgid "Primary Menu"
 msgstr ""
 
-#: ../functions.php:70 ../inc/extras.php:136
+#: ../functions.php:71 ../inc/extras.php:136
 msgid "Footer Links"
 msgstr ""
 
-#: ../functions.php:108
+#: ../functions.php:109
 msgid "Sidebar"
 msgstr ""
 
-#: ../functions.php:118
+#: ../functions.php:119
 msgid "Homepage Widget 1"
 msgstr ""
 
-#: ../functions.php:119 ../functions.php:129 ../functions.php:139
+#: ../functions.php:120 ../functions.php:130 ../functions.php:140
 msgid "Displays on the Home Page"
 msgstr ""
 
-#: ../functions.php:128
+#: ../functions.php:129
 msgid "Homepage Widget 2"
 msgstr ""
 
-#: ../functions.php:138
+#: ../functions.php:139
 msgid "Homepage Widget 3"
 msgstr ""
 
-#: ../functions.php:148
+#: ../functions.php:149
 msgid "Footer Widget 1"
 msgstr ""
 
-#: ../functions.php:149 ../functions.php:159 ../functions.php:169
+#: ../functions.php:150 ../functions.php:160 ../functions.php:170
 msgid "Used for footer widget area"
 msgstr ""
 
-#: ../functions.php:158
+#: ../functions.php:159
 msgid "Footer Widget 2"
 msgstr ""
 
-#: ../functions.php:168
+#: ../functions.php:169
 msgid "Footer Widget 3"
 msgstr ""
 
-#: ../functions.php:309
+#: ../functions.php:316
 msgid "Right Sidebar"
 msgstr ""
 
-#: ../functions.php:309
+#: ../functions.php:316
 msgid "Left Sidebar"
 msgstr ""
 
-#: ../functions.php:309
+#: ../functions.php:316
 msgid "No Sidebar"
 msgstr ""
 
-#: ../functions.php:309
+#: ../functions.php:316
 msgid "Full Width"
 msgstr ""
 
@@ -226,280 +250,284 @@ msgstr ""
 msgid "Check if you want to enable slider"
 msgstr ""
 
-#: ../inc/customizer.php:91
+#: ../inc/customizer.php:87
+msgid "Uncheck to simply show the image in the slider"
+msgstr ""
+
+#: ../inc/customizer.php:102
 msgid "Slider Category"
 msgstr ""
 
-#: ../inc/customizer.php:94
+#: ../inc/customizer.php:105
 msgid "Select a category for the featured post slider"
 msgstr ""
 
-#: ../inc/customizer.php:104
+#: ../inc/customizer.php:115
 msgid "Number of slide items"
 msgstr ""
 
-#: ../inc/customizer.php:106
+#: ../inc/customizer.php:117
 msgid "Enter the number of slide items"
 msgstr ""
 
-#: ../inc/customizer.php:111
+#: ../inc/customizer.php:122
 msgid "Layout options"
 msgstr ""
 
-#: ../inc/customizer.php:123
+#: ../inc/customizer.php:134
 msgid "Website Layout Options"
 msgstr ""
 
-#: ../inc/customizer.php:126
+#: ../inc/customizer.php:137
 msgid "Choose between different layout options to be used as default"
 msgstr ""
 
-#: ../inc/customizer.php:137
+#: ../inc/customizer.php:148
 msgid "WooCommerce Page Layout Options"
 msgstr ""
 
-#: ../inc/customizer.php:140
+#: ../inc/customizer.php:151
 msgid "Choose between different layout options to be used as default for all woocommerce pages"
 msgstr ""
 
-#: ../inc/customizer.php:151
+#: ../inc/customizer.php:162
 msgid "Element Color"
 msgstr ""
 
-#: ../inc/customizer.php:152 ../inc/customizer.php:164
-#: ../inc/customizer.php:218 ../inc/customizer.php:228
-#: ../inc/customizer.php:238 ../inc/customizer.php:248
-#: ../inc/customizer.php:326 ../inc/customizer.php:336
-#: ../inc/customizer.php:366 ../inc/customizer.php:506
-#: ../inc/customizer.php:517
+#: ../inc/customizer.php:163 ../inc/customizer.php:175
+#: ../inc/customizer.php:229 ../inc/customizer.php:239
+#: ../inc/customizer.php:249 ../inc/customizer.php:259
+#: ../inc/customizer.php:337 ../inc/customizer.php:347
+#: ../inc/customizer.php:377 ../inc/customizer.php:517
+#: ../inc/customizer.php:528
 msgid "Default used if no color is selected"
 msgstr ""
 
-#: ../inc/customizer.php:163
+#: ../inc/customizer.php:174
 msgid "Element color on hover"
 msgstr ""
 
-#: ../inc/customizer.php:171
+#: ../inc/customizer.php:182
 msgid "Action Button"
 msgstr ""
 
-#: ../inc/customizer.php:181
+#: ../inc/customizer.php:192
 msgid "Call For Action Text"
 msgstr ""
 
-#: ../inc/customizer.php:182
+#: ../inc/customizer.php:193
 msgid "Enter the text for call for action section"
 msgstr ""
 
-#: ../inc/customizer.php:193
+#: ../inc/customizer.php:204
 msgid "Call For Action Button Title"
 msgstr ""
 
-#: ../inc/customizer.php:195
+#: ../inc/customizer.php:206
 msgid "Enter the title for Call For Action button"
 msgstr ""
 
-#: ../inc/customizer.php:205
+#: ../inc/customizer.php:216
 msgid "CFA button link"
 msgstr ""
 
-#: ../inc/customizer.php:207
+#: ../inc/customizer.php:218
 msgid "Enter the link for Call For Action button"
 msgstr ""
 
-#: ../inc/customizer.php:217
+#: ../inc/customizer.php:228
 msgid "Call For Action Text Color"
 msgstr ""
 
-#: ../inc/customizer.php:227
+#: ../inc/customizer.php:238
 msgid "Call For Action Background Color"
 msgstr ""
 
-#: ../inc/customizer.php:237
+#: ../inc/customizer.php:248
 msgid "Call For Action Button Border Color"
 msgstr ""
 
-#: ../inc/customizer.php:247
+#: ../inc/customizer.php:258
 msgid "Call For Action Button Text Color"
 msgstr ""
 
-#: ../inc/customizer.php:254
+#: ../inc/customizer.php:265
 msgid "Typography"
 msgstr ""
 
-#: ../inc/customizer.php:274
+#: ../inc/customizer.php:285
 msgid "Main Body Text"
 msgstr ""
 
-#: ../inc/customizer.php:275
+#: ../inc/customizer.php:286
 msgid "Used in p tags"
 msgstr ""
 
-#: ../inc/customizer.php:315
+#: ../inc/customizer.php:326
 msgid "Heading Color"
 msgstr ""
 
-#: ../inc/customizer.php:316
+#: ../inc/customizer.php:327
 msgid "Color for all headings (h1-h6)"
 msgstr ""
 
-#: ../inc/customizer.php:325
+#: ../inc/customizer.php:336
 msgid "Link Color"
 msgstr ""
 
-#: ../inc/customizer.php:335
+#: ../inc/customizer.php:346
 msgid "Link:hover Color"
 msgstr ""
 
-#: ../inc/customizer.php:342
+#: ../inc/customizer.php:353
 msgid "Header"
 msgstr ""
 
-#: ../inc/customizer.php:353
+#: ../inc/customizer.php:364
 msgid "Sticky Header"
 msgstr ""
 
-#: ../inc/customizer.php:354
+#: ../inc/customizer.php:365
 msgid "Check to show fixed header"
 msgstr ""
 
-#: ../inc/customizer.php:365
+#: ../inc/customizer.php:376
 msgid "Top nav background color"
 msgstr ""
 
-#: ../inc/customizer.php:375
+#: ../inc/customizer.php:386
 msgid "Top nav item color"
 msgstr ""
 
-#: ../inc/customizer.php:376
+#: ../inc/customizer.php:387
 msgid "Link color"
 msgstr ""
 
-#: ../inc/customizer.php:386
+#: ../inc/customizer.php:397
 msgid "Top nav item hover color"
 msgstr ""
 
-#: ../inc/customizer.php:387
+#: ../inc/customizer.php:398
 msgid "Link:hover color"
 msgstr ""
 
-#: ../inc/customizer.php:397
+#: ../inc/customizer.php:408
 msgid "Top nav dropdown background color"
 msgstr ""
 
-#: ../inc/customizer.php:398 ../inc/customizer.php:431
+#: ../inc/customizer.php:409 ../inc/customizer.php:442
 msgid "Background of dropdown item hover color"
 msgstr ""
 
-#: ../inc/customizer.php:408
+#: ../inc/customizer.php:419
 msgid "Top nav dropdown item color"
 msgstr ""
 
-#: ../inc/customizer.php:409
+#: ../inc/customizer.php:420
 msgid "Dropdown item color"
 msgstr ""
 
-#: ../inc/customizer.php:419
+#: ../inc/customizer.php:430
 msgid "Top nav dropdown item hover color"
 msgstr ""
 
-#: ../inc/customizer.php:420
+#: ../inc/customizer.php:431
 msgid "Dropdown item hover color"
 msgstr ""
 
-#: ../inc/customizer.php:430
+#: ../inc/customizer.php:441
 msgid "Top nav dropdown item background hover color"
 msgstr ""
 
-#: ../inc/customizer.php:437
+#: ../inc/customizer.php:448
 msgid "Footer"
 msgstr ""
 
-#: ../inc/customizer.php:447
+#: ../inc/customizer.php:458
 msgid "Footer widget area background color"
 msgstr ""
 
-#: ../inc/customizer.php:457
+#: ../inc/customizer.php:468
 msgid "Footer background color"
 msgstr ""
 
-#: ../inc/customizer.php:467
+#: ../inc/customizer.php:478
 msgid "Footer text color"
 msgstr ""
 
-#: ../inc/customizer.php:477
+#: ../inc/customizer.php:488
 msgid "Footer link color"
 msgstr ""
 
-#: ../inc/customizer.php:487
+#: ../inc/customizer.php:498
 msgid "Footer information"
 msgstr ""
 
-#: ../inc/customizer.php:488
+#: ../inc/customizer.php:499
 msgid "Copyright text in footer"
 msgstr ""
 
-#: ../inc/customizer.php:495
+#: ../inc/customizer.php:506
 msgid "Social"
 msgstr ""
 
-#: ../inc/customizer.php:505
+#: ../inc/customizer.php:516
 msgid "Social icon color"
 msgstr ""
 
-#: ../inc/customizer.php:516
+#: ../inc/customizer.php:527
 msgid "Footer social icon color"
 msgstr ""
 
-#: ../inc/customizer.php:527
+#: ../inc/customizer.php:538
 msgid "Footer Social Icons"
 msgstr ""
 
-#: ../inc/customizer.php:528
+#: ../inc/customizer.php:539
 msgid "Check to show social icons in footer"
 msgstr ""
 
-#: ../inc/customizer.php:535
+#: ../inc/customizer.php:546
 msgid "Other"
 msgstr ""
 
-#: ../inc/customizer.php:545
+#: ../inc/customizer.php:556
 msgid "Custom CSS"
 msgstr ""
 
-#: ../inc/customizer.php:546
+#: ../inc/customizer.php:557
 msgid "Additional CSS"
 msgstr ""
 
-#: ../inc/customizer.php:553 ../inc/extras.php:334
+#: ../inc/customizer.php:564 ../inc/extras.php:338
 msgid "Support and Documentation"
 msgstr ""
 
-#: ../inc/customizer.php:737 ../inc/extras.php:340
+#: ../inc/customizer.php:748 ../inc/extras.php:344
 msgid "Sparkling Documentation"
 msgstr ""
 
-#: ../inc/customizer.php:738 ../inc/extras.php:341
+#: ../inc/customizer.php:749 ../inc/extras.php:345
 msgid "The best way to contact us with <b>support questions</b> and <b>bug reports</b> is via"
 msgstr ""
 
-#: ../inc/customizer.php:738 ../inc/extras.php:341
+#: ../inc/customizer.php:749 ../inc/extras.php:345
 msgid "Colorlib support forum"
 msgstr ""
 
-#: ../inc/customizer.php:739 ../inc/extras.php:342
+#: ../inc/customizer.php:750 ../inc/extras.php:346
 msgid "If you like this theme, I'd appreciate any of the following:"
 msgstr ""
 
-#: ../inc/customizer.php:741 ../inc/extras.php:344
+#: ../inc/customizer.php:752 ../inc/extras.php:348
 msgid "Rate this Theme"
 msgstr ""
 
-#: ../inc/customizer.php:742 ../inc/extras.php:345
+#: ../inc/customizer.php:753 ../inc/extras.php:349
 msgid "Like on Facebook"
 msgstr ""
 
-#: ../inc/customizer.php:743 ../inc/extras.php:346
+#: ../inc/customizer.php:754 ../inc/extras.php:350
 msgid "Follow on Twitter"
 msgstr ""
 
@@ -515,7 +543,7 @@ msgstr ""
 msgid "Submit"
 msgstr ""
 
-#: ../inc/extras.php:210
+#: ../inc/extras.php:214
 #, php-format
 msgid "Theme by %1$s Powered by %2$s"
 msgstr ""
@@ -932,11 +960,6 @@ msgid "Search for:"
 msgstr ""
 
 #: ../searchform.php:12
-msgctxt "placeholder"
-msgid "Search&hellip;"
-msgstr ""
-
-#: ../searchform.php:12
 msgctxt "label"
 msgid "Search for:"
 msgstr ""
@@ -944,6 +967,10 @@ msgstr ""
 #: ../searchform.php:14
 msgctxt "submit button"
 msgid "Search"
+msgstr ""
+
+#: ../sidebar.php:19
+msgid "Archives"
 msgstr ""
 
 #: ../sidebar.php:26
