@@ -1825,6 +1825,20 @@ button[type=submit],
     color: #FFF !important;
 }
 
+.current-menu-ancestor > a {
+  background-color: #0088cc !important;
+  color: #FFF !important;
+}
+
+.current-menu-ancestor > a:hover {
+  background-color: #31708f !important;
+}
+
+#menu-item-990 > a {
+  color: #1ab4ef !important;
+  background-color: transparent !important;
+}
+
 .nav-previous {
   float: left;
 }
