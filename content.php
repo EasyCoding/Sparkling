@@ -19,13 +19,14 @@
 
 				<h2 class="entry-title"><a href="<?php the_permalink(); ?>" rel="bookmark"><?php the_title(); ?></a></h2>
 
-				<div class="entry-meta">
-					<?php sparkling_posted_on(); ?>
-                    <?php if ( ! post_password_required() && ( comments_open() || '0' != get_comments_number() ) ) : ?>
-				<span class="comments-link">
+                <div class="entry-meta">
+                    <?php sparkling_posted_on(); ?>
+
+                    <span class="comments-link">
                     <i class="fa fa-comment-o"></i>
-                            <?php comments_popup_link( esc_html__( 'Leave a comment', 'sparkling' ), esc_html__( '1 Comment', 'sparkling' ), esc_html__( '% Comments', 'sparkling' ) ); ?>
+                        <?php comments_popup_link( esc_html__( 'Leave a comment', 'sparkling' ), esc_html__( '1 Comment', 'sparkling' ), esc_html__( '% Comments', 'sparkling' ) ); ?>
                 </span>
+
                     <?php
                     /* translators: used between list items, there is a space after the comma */
                     $categories_list = get_the_category_list( esc_html__( ',  ', 'sparkling' ) );
@@ -33,26 +34,24 @@
                         ?>
                         <span class="cat-links"><i class="fa fa-folder-o"></i>
                             <?php printf( esc_html__( ' %1$s', 'sparkling' ), $categories_list ); ?>
-                         </span>
+				</span>
                     <?php endif; // End if categories ?>
-				<?php endif; ?>
+                    <?php if ( get_edit_post_link() ) : ?>
+                        <?php
+                        edit_post_link(
+                            sprintf(
+                            /* translators: %s: Name of current post */
+                                esc_html__( 'Edit %s', 'sparkling' ),
+                                the_title( '<span class="screen-reader-text">"', '"</span>', false )
+                            ),
+                            '<i class="fa fa-pencil-square-o"></i><span class="edit-link">',
+                            '</span>'
+                        );
+                        ?>
+                    <?php endif; ?>
 
-				<?php if ( get_edit_post_link() ) : ?>
-					<?php
-						edit_post_link(
-							sprintf(
-								/* translators: %s: Name of current post */
-								esc_html__( 'Edit %s', 'sparkling' ),
-								the_title( '<span class="screen-reader-text">"', '"</span>', false )
-							),
-							'<i class="fa fa-pencil-square-o"></i><span class="edit-link">',
-							'</span>'
-						);
-					?>
-				<?php endif; ?>
-
-				</div><!-- .entry-meta -->
-			</header><!-- .entry-header -->
+                </div><!-- .entry-meta -->
+            </header><!-- .entry-header -->
 
 			<?php if ( is_search() ) : // Only display Excerpts for Search ?>
 			<div class="entry-summary">
