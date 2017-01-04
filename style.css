@@ -1834,7 +1834,7 @@ button[type=submit],
   background-color: #31708f !important;
 }
 
-#menu-item-990 > a {
+#menu-item-990.current-menu-ancestor > a {
   color: #1ab4ef !important;
   background-color: transparent !important;
 }
