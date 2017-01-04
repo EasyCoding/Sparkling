@@ -1819,6 +1819,12 @@ button[type=submit],
   border-left-color: #ccc;
 }
 
+.navbar-nav ul li:hover > a
+{
+    background: #31708f;
+    color: #FFF !important;
+}
+
 .nav-previous {
   float: left;
 }
