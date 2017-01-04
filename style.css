@@ -1842,7 +1842,7 @@ blockquote {
   color: #7dacb7;
 }
 
-.wp-calendar #next a {
+#wp-calendar #next a {
   float: right;
 }
 
