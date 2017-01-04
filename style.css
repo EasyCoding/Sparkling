@@ -1845,3 +1845,7 @@ blockquote {
 .wp-calendar #next a {
   float: right;
 }
+
+.comment-warning {
+  float: left;
+}

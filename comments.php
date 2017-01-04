@@ -138,7 +138,7 @@ if ( post_password_required() ) {
 
         'comment_field' => '<div class="form-group">' .
 
-            '<label for="comment">' . esc_html__( 'Do not post any hyperlinks, or your comment will be removed as spam.', 'sparkling' ) . '</label>' .
+            '<label for="comment" class="comment-warning">' . esc_html__( 'Do not post any hyperlinks, or your comment will be removed as spam.', 'sparkling' ) . '</label>' .
 
             '<textarea id="comment" name="comment" class="form-control" rows="6" placeholder="' . esc_html__( 'Enter your comment', 'sparkling' ) . '" aria-required="true" data-error="'.esc_html__( 'Enter your comment without any hyperlinks.', 'sparkling' ).'" ' . $pattern . ' required></textarea>' .
 
