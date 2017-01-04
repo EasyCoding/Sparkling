@@ -1846,3 +1846,7 @@ blockquote {
 .comment-warning {
   float: left;
 }
+
+.comments-link span {
+  fint-size: 12px;
+}
