@@ -222,7 +222,8 @@ function sparkling_scripts() {
 
   // Disable build-in jQuery. Use updated one
   wp_deregister_script( 'jquery' );
-  wp_enqueue_script('jquery-updated', get_template_directory_uri() . '/inc/js/jquery.min.js', array('jquery') );
+  wp_register_script( 'jquery', get_template_directory_uri() . '/inc/js/jquery.min.js', false, null, true );
+  wp_enqueue_script( 'jquery' );
 
   // Add main theme stylesheet
   wp_enqueue_style( 'sparkling-style', get_stylesheet_uri() );
