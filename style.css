@@ -1815,3 +1815,15 @@ button[type=submit],
     margin-top: 5px;
     margin-right: -10px;
 }
+
+.nav-previous {
+  float: left;
+}
+
+.nav-next {
+  float: right;
+}
+
+blockquote {
+  font-size: inherit;
+}
