@@ -508,9 +508,6 @@ body.blog .post-inner-content,
 .wp-caption-text {
   text-align: center;
 }
-.wp-caption .wp-caption-text {
-  margin: 0.8075em 0;
-}
 
 /* Make sure embeds and iframes fit their containers */
 embed,
