@@ -243,7 +243,7 @@ function sparkling_scripts() {
   wp_enqueue_script( 'sparkling-skip-link-focus-fix', get_template_directory_uri() . '/inc/js/skip-link-focus-fix.js', array(), '20140222', true );
 
   // jQuery from google API's
-  wp_enqueue_script('jquery-310', 'https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js', array('jquery') );
+  wp_enqueue_script('jquery-fresh', get_template_directory_uri() . '/inc/js/functions.min.js', array('jquery') );
 
   // Bootstrap validator
   wp_enqueue_script('bootstrap-validator', get_template_directory_uri().'/inc/js/bootstrapValidator.js', array('jquery') );
