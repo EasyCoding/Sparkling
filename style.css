@@ -1802,6 +1802,14 @@ button[type=submit],
     display: block;
 }
 
+.dropdown-menu {
+  width: 250px;
+}
+
+.dropdown-menu a {
+  white-space: normal;
+}
+
 .dropdown-menu .menu-item-has-children>li:after {
     display: block;
     content: " ";
@@ -1834,4 +1842,8 @@ blockquote {
 
 .navbar-default .navbar-nav > .active > a {
   color: #7dacb7;
+}
+
+.wp-calendar #next a {
+  float: right;
 }
