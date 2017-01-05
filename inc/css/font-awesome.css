@@ -180,6 +180,15 @@
 }
 /* Font Awesome uses the Unicode Private Use Area (PUA) to ensure screen
    readers do not read off random characters that represent icons */
+.fa-envelope-o:before {
+  content: "\f003";
+}
+.fa-star-o:before {
+  content: "\f006";
+}
+.fa-file-o:before {
+  content: "\f016";
+}
 .fa-clock-o:before {
   content: "\f017";
 }
@@ -195,6 +204,12 @@
 .fa-chevron-right:before {
   content: "\f054";
 }
+.fa-calendar:before {
+  content: "\f073";
+}
+.fa-heart-o:before {
+  content: "\f08a";
+}
 .fa-twitter:before {
   content: "\f099";
 }
@@ -207,6 +222,9 @@
 .fa-comment-o:before {
   content: "\f0e5";
 }
+.fa-file-text-o:before {
+  content: "\f0f6";
+}
 .fa-angle-up:before {
   content: "\f106";
 }
@@ -215,6 +233,9 @@
 }
 .fa-folder-o:before {
   content: "\f114";
+}
+.fa-folder-open-o:before {
+  content: "\f115";
 }
 .fa-telegram:before {
   content: "\f2c6";
