@@ -180,11 +180,29 @@
 }
 /* Font Awesome uses the Unicode Private Use Area (PUA) to ensure screen
    readers do not read off random characters that represent icons */
+.fa-search:before {
+  content: "\f002";
+}
 .fa-envelope-o:before {
   content: "\f003";
 }
 .fa-star-o:before {
   content: "\f006";
+}
+.fa-user:before {
+  content: "\f007";
+}
+.fa-check:before {
+  content: "\f00c";
+}
+.fa-close:before {
+  content: "\f00d";
+}
+.fa-remove:before {
+  content: "\f00d";
+}
+.fa-times:before {
+  content: "\f00d";
 }
 .fa-file-o:before {
   content: "\f016";
