@@ -1777,6 +1777,7 @@ button[type=submit],
 
 /* Dropdown Menu */
 
+/* For non-mobile devices */
 @media (min-width: 767px) {
     .menu-item-has-children>.dropdown-menu {
         top: 6px;
@@ -1837,6 +1838,17 @@ button[type=submit],
 #menu-item-990.current-menu-ancestor > a {
   color: #1ab4ef !important;
   background-color: transparent !important;
+}
+
+/* For mobile devices */
+@media (max-width: 767px) {
+    .dropdown-menu {
+        display: none !important;
+    }
+
+    span.caret {
+        display: none;
+    }
 }
 
 .nav-previous {
