@@ -770,7 +770,6 @@ button:hover, .button:hover {
 #logo {
   position: relative;
   margin-top: 10px;
-  width: 80%;
 }
 
 #logo .site-name {
@@ -1849,6 +1848,41 @@ button[type=submit],
     span.caret {
         display: none;
     }
+
+    #logo {
+       width: 80%;
+    }
+}
+
+/* Header fixes for tablets */
+@media (min-width: 992px) and (max-width: 1199px) {
+
+    .navbar > .container .navbar-brand {
+        font-size: 1.6vw;
+    }
+
+    .blog-description {
+        position: absolute;
+        font-size: 0.96vw;
+    }
+}
+
+/* Header fixes for small tablets */
+@media (min-width: 768px) and (max-width: 991px) {
+
+  .menu-item a {
+    font-size: 0.9vw !important;
+    padding: 15px 8px 10px 8px !important;
+  }
+
+  .navbar > .container .navbar-brand {
+    font-size: 1.4vw;
+  }
+
+  .blog-description {
+    position: absolute;
+    font-size: 0.96vw;
+  }
 }
 
 .nav-previous {
