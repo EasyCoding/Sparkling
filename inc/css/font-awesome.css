@@ -237,6 +237,9 @@
 .fa-rss:before {
   content: "\f09e";
 }
+.fa-envelope:before {
+  content: "\f0e0";
+}
 .fa-comment-o:before {
   content: "\f0e5";
 }
