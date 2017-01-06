@@ -118,7 +118,7 @@ if ( post_password_required() ) {
                                 <div class="form-group">
                                     <label for="inputName" class="control-label">' . esc_html__( 'Name', 'sparkling' ) . '</label>
                                     <div class="input-group">
-                                        <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                                        <span class="input-group-addon"><i class="fa fa-user"></i></span>
                                         <input id="author" name="author" type="text" class="form-control" placeholder="' . esc_html__( 'Your name', 'sparkling' ).'" value="' . esc_attr( $commenter['comment_author'] ) . '" ' . $aria_req . ' data-error="' . esc_html__( 'You must enter your name!', 'sparkling' ) . '" required/>
                                     </div>
                                     <div class="help-block with-errors"></div>
@@ -129,7 +129,7 @@ if ( post_password_required() ) {
                             <div class="form-group">
                                 <label for="inputName" class="control-label">' . esc_html__( 'Email (hidden)', 'sparkling' ) . '</label>
                                 <div class="input-group">
-                                    <span class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></span>
+                                    <span class="input-group-addon"><i class="fa fa-envelope"></i></span>
                                     <input id="email" name="email" type="email" class="form-control" placeholder="Email" value="' . esc_attr(  $commenter['comment_author_email'] ) . '" ' . $aria_req . ' data-error="' . esc_html__( 'Incorrect Email address entered.', 'sparkling' ) .'" required/>
                                 </div>
                                 <div class="help-block with-errors"></div>

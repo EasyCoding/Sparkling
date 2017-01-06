@@ -76,7 +76,7 @@ class wp_bootstrap_navwalker extends Walker_Nav_Menu {
                         $output .= $indent . '<li' . $id . $value . $class_names .'>';
 
                         $atts = array();
-                        $atts['title']  = ( ( (strpos($item->attr_title, 'fa-') !== false) || (strpos($item->attr_title, 'glyphicon-') !== false) ) )       ? $item->title        : $item->attr_title;
+                        $atts['title']  = ( ( (strpos($item->attr_title, 'fa-') !== false) || (strpos($item->attr_title, 'fa-') !== false) ) )       ? $item->title        : $item->attr_title;
                         $atts['target'] = ! empty( $item->target )        ? $item->target        : '';
                         $atts['rel']    = ! empty( $item->xfn )                ? $item->xfn        : '';
 
@@ -110,7 +110,7 @@ class wp_bootstrap_navwalker extends Walker_Nav_Menu {
                          */
                         if ( ! empty( $item->attr_title)){
 				if (strpos( $item->attr_title, 'glyphicon-' ) !== false )
-					$item_output .= '<a'. $attributes .'><span class="glyphicon ' . esc_attr( $item->attr_title ) . '"></span>&nbsp;';
+					$item_output .= '<a'. $attributes .'><span class="fa ' . esc_attr( $item->attr_title ) . '"></span>&nbsp;';
 				elseif (strpos( $item->attr_title, 'fa-' ) !== false )
 					$item_output .= '<a'. $attributes .'><span class="' . esc_attr( $item->attr_title ) . '"></span>&nbsp;';
 				else
