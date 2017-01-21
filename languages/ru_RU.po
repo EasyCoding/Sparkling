@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Sparkling Theme\n"
 "POT-Creation-Date: 2017-01-22 00:10+0500\n"
-"PO-Revision-Date: 2017-01-22 00:25+0500\n"
+"PO-Revision-Date: 2017-01-22 00:30+0500\n"
 "Last-Translator: V1TSK <vitaly@easycoding.org>\n"
 "Language-Team: colorlib <info@colorlib.com>\n"
 "Language: ru\n"
@@ -84,7 +84,7 @@ msgstr "Ваше имя"
 
 #: ../comments.php:122
 msgid "You must enter your name!"
-msgstr "Укажите своё имя"
+msgstr "Укажите своё имя или ник"
 
 #: ../comments.php:130
 msgid "Email (hidden)"
@@ -107,7 +107,7 @@ msgstr "Текст комментария"
 #: ../comments.php:143
 msgid "Enter your comment without any hyperlinks."
 msgstr ""
-"Введите текст вашего комментария в эту форму без использования внешних "
+"Введите текст вашего комментария в эту форму без использования каких-либо "
 "ссылок."
 
 #: ../comments.php:168
@@ -116,7 +116,7 @@ msgstr "Запрещено указывать ссылки в тексте со�
 
 #: ../content-none.php:13
 msgid "Nothing Found"
-msgstr "Ничего не найдено"
+msgstr "Поиск не дал результатов"
 
 #: ../content-none.php:20
 #, php-format
