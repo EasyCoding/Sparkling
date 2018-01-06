@@ -1,15 +1,15 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Sparkling Theme\n"
-"POT-Creation-Date: 2017-01-22 00:10+0500\n"
-"PO-Revision-Date: 2017-01-22 00:30+0500\n"
-"Last-Translator: V1TSK <vitaly@easycoding.org>\n"
+"POT-Creation-Date: 2018-01-07 00:51+0500\n"
+"PO-Revision-Date: 2018-01-07 00:51+0500\n"
+"Last-Translator: Vitaly Zaitsev <vitaly@easycoding.org>\n"
 "Language-Team: colorlib <info@colorlib.com>\n"
 "Language: ru\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 1.8.11\n"
+"X-Generator: Poedit 2.0.3\n"
 "X-Poedit-Basepath: .\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Poedit-KeywordsList: _e;__;esc_attr__;esc_html__;esc_html_e;"
@@ -677,11 +677,6 @@ msgctxt "label"
 msgid "Search for:"
 msgstr "Введите ключевые слова для поиска"
 
-#: ../searchform.php:14
-msgctxt "submit button"
-msgid "Search"
-msgstr "Искать!"
-
 #: ../sidebar.php:19
 msgid "Archives"
 msgstr "Архивы"
@@ -689,6 +684,10 @@ msgstr "Архивы"
 #: ../sidebar.php:26
 msgid "Meta"
 msgstr "Мета"
+
+#~ msgctxt "submit button"
+#~ msgid "Search"
+#~ msgstr "Искать!"
 
 #, fuzzy
 #~ msgid "Status"
