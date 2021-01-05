@@ -492,3 +492,34 @@ function remove_version()
 
 // Replace version info by custom text...
 add_filter('the_generator', 'remove_version');
+
+function sparkling_meta_description() {
+    global $post;
+    if ( is_singular() ) {
+        $page_cv = get_post_custom_values( 'description' );
+        echo "<meta name=\"description\" content=\"" . wp_strip_all_tags ( isset( $page_cv[0] ) ? $page_cv[0] : single_post_title('', false), true ) . "\" />\n";
+    }
+    elseif ( is_home() ) {
+        echo "<meta name=\"description\" content=\"" . get_bloginfo( 'name' ) . ": " . get_bloginfo( 'description' ) . "\" />\n";
+    }
+    elseif ( is_category() ) {
+        echo "<meta name=\"description\" content=\"" . wp_strip_all_tags( category_description(), true ) . "\" />\n";
+    }
+}
+
+add_action( 'wp_head', 'sparkling_meta_description' );
+
+function sparkling_meta_keywords() {
+    global $post;
+    if ( is_single() ) {
+        $post_tags = get_the_tags();
+        if ( $post_tags ) {
+            echo "<meta name=\"keywords\" content=\"" . implode( ',', wp_list_pluck($post_tags, 'name') ) . "\" />\n";
+        }
+    }
+    elseif ( is_home() ) {
+        echo "<meta name=\"keywords\" content=\"EasyCoding,сайт,TF2 Repair,TF2Repair,SRC Repair,srcrepair,HOWTO,статьи,программы,новости,программирование,разработка проектов,Garry's Mod,Steam,C++,PHP,articles,coding,easycoding,Linux,Fedora\"/>\n";
+    }
+}
+
+add_action( 'wp_head', 'sparkling_meta_keywords' );
