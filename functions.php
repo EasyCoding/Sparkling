@@ -487,7 +487,7 @@ function getNumEnding($number, $endingArray)
 
 function remove_version()
 {
-  return '';
+    return '';
 }
 
 // Replace version info by custom text...
@@ -497,13 +497,13 @@ function sparkling_meta_description() {
     global $post;
     if ( is_singular() ) {
         $page_cv = get_post_custom_values( 'description' );
-        echo "<meta name=\"description\" content=\"" . wp_strip_all_tags ( isset( $page_cv[0] ) ? $page_cv[0] : single_post_title('', false), true ) . "\" />\n";
+        printf ( '<meta name="description" content="%s" />%s', wp_strip_all_tags ( isset( $page_cv[0] ) ? $page_cv[0] : single_post_title( '', false ), true ), PHP_EOL );
     }
     elseif ( is_home() ) {
-        echo "<meta name=\"description\" content=\"" . get_bloginfo( 'name' ) . ": " . get_bloginfo( 'description' ) . "\" />\n";
+        printf ( '<meta name="description" content="%s: %s" />%s', get_bloginfo( 'name' ), get_bloginfo( 'description' ), PHP_EOL );
     }
     elseif ( is_category() ) {
-        echo "<meta name=\"description\" content=\"" . wp_strip_all_tags( category_description(), true ) . "\" />\n";
+        printf ( '<meta name="description" content="%s" />%s', wp_strip_all_tags( category_description(), true ), PHP_EOL );
     }
 }
 
@@ -514,11 +514,11 @@ function sparkling_meta_keywords() {
     if ( is_single() ) {
         $post_tags = get_the_tags();
         if ( $post_tags ) {
-            echo "<meta name=\"keywords\" content=\"" . implode( ',', wp_list_pluck($post_tags, 'name') ) . "\" />\n";
+            printf ( '<meta name="keywords" content="%s" />%s', implode( ',', wp_list_pluck($post_tags, 'name') ), PHP_EOL );
         }
     }
     elseif ( is_home() ) {
-        echo "<meta name=\"keywords\" content=\"EasyCoding,сайт,TF2 Repair,TF2Repair,SRC Repair,srcrepair,HOWTO,статьи,программы,новости,программирование,разработка проектов,Garry's Mod,Steam,C++,PHP,articles,coding,easycoding,Linux,Fedora\"/>\n";
+        printf ( '<meta name="keywords" content="%s" />%s', 'EasyCoding,сайт,TF2 Repair,TF2Repair,SRC Repair,srcrepair,HOWTO,статьи,программы,новости,программирование,разработка проектов,Steam,C++,PHP,articles,coding,easycoding,Linux,Fedora', PHP_EOL );
     }
 }
 
